@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>菜商</title>
+<link rel="stylesheet" type="text/css" href="../../../resources/wechat/css/business.css">
+</head>
+<body>
+	<div class="navbar">
+      <span class="navbar_fla">
+        菜品列表
+      </span>
+    </div>
+    <div class="one-business" onclick="gotoBusiness(this)">
+    	<div style="float:left;">
+    		<img alt="potato" src="../../../resources/wechat/images/potato.jpg">
+    	</div>
+       	<div style="height:220px;margin-left:300px;">
+       	  <h2 style="margin-top:20px;">
+          	土豆            
+          </h2>
+          <div style="height:150px;margin-top:20px;">
+          	<div style="height:30px;margin-top:20px;">产地：河南</div>
+          	<div style="height:30px;margin-top:20px;">价格：1.2RMB/斤</div>
+          	<div style="height:30px;margin-top:20px;">
+	            <span>购买斤数：</span>
+	            <span>-</span><span>
+	            <input type="text" size="4"></span>
+	            <span>+</span>
+            </div>
+        </div>
+       	</div>
+        
+       	<div class="goto"><img src="../../../resources/wechat/images/right.png"></div>
+   	</div>
+   	
+   	<div class="one-business" onclick="gotoBusiness(this)">
+    	<div style="float:left;">
+    		<img alt="potato" src="../../../resources/wechat/images/cucumber.jpg">
+    	</div>
+       	<div style="height:220px;margin-left:300px;">
+       	  <h2 style="margin-top:20px;">
+          	黄瓜           
+          </h2>
+          <div style="height:150px;margin-top:20px;">
+          	<div style="height:30px;margin-top:20px;">产地：河南</div>
+          	<div style="height:30px;margin-top:20px;">价格：2.2RMB/斤</div>
+          	<div style="height:30px;margin-top:20px;">
+	            <span>购买斤数：</span>
+	            <span>-</span><span>
+	            <input type="text" size="4"></span>
+	            <span>+</span>
+            </div>
+        </div>
+       	</div>
+        
+       	<div class="goto"><img src="../../../resources/wechat/images/right.png"></div>
+   	</div>
+   	
+   	<div class="one-business" onclick="gotoBusiness(this)">
+    	<div style="float:left;">
+    		<img alt="potato" src="../../../resources/wechat/images/tomato.jpg">
+    	</div>
+       	<div style="height:220px;margin-left:300px;">
+       	  <h2 style="margin-top:20px;">
+          	番茄           
+          </h2>
+          <div style="height:150px;margin-top:20px;">
+          	<div style="height:30px;margin-top:20px;">产地：河南</div>
+          	<div style="height:30px;margin-top:20px;">价格：1.8RMB/斤</div>
+          	<div style="height:30px;margin-top:20px;">
+	            <span>购买斤数：</span>
+	            <span>-</span><span>
+	            <input type="text" size="4"></span>
+	            <span>+</span>
+            </div>
+        </div>
+       	</div>
+        
+       	<div class="goto"><img src="../../../resources/wechat/images/right.png"></div>
+   	</div>
+   	
+   	<div class="one-business" onclick="buy(this)">
+   		<div style="float:left;">
+    		<img alt="potato" style="height: 80px; width: 200px;" src="../../../resources/wechat/images/icon_buy.jpg">
+    	</div>
+   	</div>
+   	
+	<script type="text/javascript" src="/wechat_git/resources/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+      function gotoBusiness(obj){
+        $.ajax({
+            url: "/wechat_git/bzDetail.back",
+            data: form_data,
+            type: "GET",
+            async: true,
+            success: function (data) {
+              
+            },
+            timeout: 120000,
+            beforeSend: function () {
+              
+            },
+            dataType: "json",
+            complete: function () {
+              //is_occupied=0;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $("#ajaxInfo").html("当前网络不稳定，请您在更好的网络下再试！");
+            }
+        });
+      }
+      
+    </script>
+</body>
+</html>

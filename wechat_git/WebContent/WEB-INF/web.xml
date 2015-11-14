@@ -38,4 +38,14 @@
 		<servlet-name>login_back</servlet-name>
 		<url-pattern>/login.back</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>bzDetail_back</servlet-name>
+		<servlet-class>yql.wechat.servlet.BzDetailServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>bzDetail_back</servlet-name>
+		<url-pattern>/bzDetail.back</url-pattern>
+	</servlet-mapping>
 </web-app>
