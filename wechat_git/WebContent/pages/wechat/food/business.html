@@ -11,7 +11,8 @@
         菜商列表
       </span>
     </div>
-    <div class="one-business" onclick="">
+    <div class="one-business" onclick="gotoBusiness(this)">
+        <input type="hidden" text="text" value="1"/>
        	<h2>
           	卖女孩的小火柴            
          </h2>
@@ -101,5 +102,31 @@
         </div>
        	<div class="goto"><img src="../../../resources/wechat/images/right.png"></div>
    	</div>
+	<script type="text/javascript" src="/wechat_git/resources/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+      function gotoBusiness(obj){
+        $.ajax({
+            url: action,
+            data: form_data,
+            type: "GET",
+            async: true,
+            success: function (data) {
+              
+            },
+            timeout: 120000,
+            beforeSend: function () {
+              
+            },
+            dataType: "json",
+            complete: function () {
+              //is_occupied=0;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $("#ajaxInfo").html("当前网络不稳定，请您在更好的网络下再试！");
+            }
+        });
+      }
+      
+    </script>
 </body>
 </html>
