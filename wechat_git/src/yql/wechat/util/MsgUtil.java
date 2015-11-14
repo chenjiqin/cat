@@ -14,6 +14,8 @@ import org.dom4j.io.SAXReader;
 
 import com.thoughtworks.xstream.XStream;
 
+import yql.wechat.bean.PTM_item;
+import yql.wechat.bean.PicTextMsg;
 import yql.wechat.bean.TextMessage;
 
 public class MsgUtil {
@@ -54,5 +56,12 @@ public class MsgUtil {
 		XStream xs = new XStream();
 		xs.alias("xml", tm.getClass());
 		return xs.toXML(tm);
+	}
+	
+	public static String PicTextMsgToXml(PicTextMsg ptm, PTM_item ptm_item) {
+		XStream xs = new XStream();
+		xs.alias("xml", ptm.getClass());
+		xs.alias("item", ptm_item.getClass());
+		return xs.toXML(ptm);
 	}
 }

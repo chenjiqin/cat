@@ -27,6 +27,16 @@
 		<servlet-name>food_business</servlet-name>
 		<url-pattern>/food_business.wx</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>p_share</servlet-name>
+		<servlet-class>yql.wechat.servlet.PShareServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>p_share</servlet-name>
+		<url-pattern>/p_share.wx</url-pattern>
+	</servlet-mapping>
 
 	<!-- ===================忧伤的分割线===================== -->
 	<servlet>
