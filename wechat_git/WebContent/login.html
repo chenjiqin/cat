@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后台登录</title>
+<link rel="stylesheet" type="text/css" href="./resources/back/css/login_style.css">
+<style type="text/css">
+      /* latin-ext */
+      @font-face {
+        font-family: 'Oleo Script';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Oleo Script'), local('OleoScript-Regular'), url("./resources/back/fonts/font1.woff2") format('woff2');
+        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Oleo Script';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Oleo Script'), local('OleoScript-Regular'), url("./resources/back/fonts/font2.woff2") format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+      }
+      body{
+        background-image:url("./resources/back/images/login_bg.png");
+        font-family: 'Oleo Script', cursive;
+      }
+    </style>
+</head>
+<body>
+	<div class="lg-container">
+      <h1>后台管理</h1>
+      <form action="/wechat/login.back" id="lg-form" name="lg-form" method="post">
+        
+        <div>
+          <label for="username">用户名:</label>
+          <input type="text" name="username" id="username" placeholder="用户名"/>
+        </div>
+        
+        <div>
+          <label for="password">密&nbsp;&nbsp;码:</label>
+          <input type="password" name="password" id="password" placeholder="密码" />
+        </div>
+        
+        <div>       
+          <button type="submit" id="login">登录</button>
+        </div>
+        
+      </form>
+      <div id="message"></div>
+    </div>
+    <!-- 页面加载完成后加载js -->
+    <script type="text/javascript" src="./resources/jquery-1.10.2.min.js"></script>
+
+    <!--该页面独有JS begin-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#login").click(function(){
+          
+          var action = $("#lg-form").attr('action');
+          var form_data = {
+            username: $("#username").val(),
+            password: $("#password").val(),
+            org: $("#org").val(),
+            is_ajax: 1
+          };
+          $.ajax({
+              url: action,
+              data: form_data,
+              type: "GET",
+              async: true,
+              success: function (data) {
+                
+              },
+              timeout: 120000,
+              beforeSend: function () {
+                
+              },
+              dataType: "json",
+              complete: function () {
+                //is_occupied=0;
+              },
+              error: function (XMLHttpRequest, textStatus, errorThrown) {
+                  $("#ajaxInfo").html("当前网络不稳定，请您在更好的网络下再试！");
+              }
+          });
+        });
+      });
+      </script>
+    <!--该页面独有JS end-->
+</body>
+</html>

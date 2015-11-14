@@ -1,0 +1,84 @@
+body{
+	background:#EEEEEE;
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+.navbar {
+	font-size:48px;
+	color:#fff;
+	background-color:#21ae37;
+	letter-spacing:5px;
+	text-align:center;
+	padding:7px 0px;
+	width:100%;
+	
+  	z-index: 900;
+  	position: relative;
+}
+.navbar_fla{
+	font-size:48px;
+	line-height:26px;
+}
+.one-business{
+	background-color: white;
+    padding: 8px 15px;
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.one-business h2 {
+    font-size: 30px;
+    color: #333333;
+    padding-bottom: 8px;
+    font-weight: normal;
+    border-bottom: 1px solid #eeeeee;
+}
+.one-business .business-info{
+	margin-top: 8px;
+    font-size: 24px;
+    color: #999999;
+    line-height: 28px;
+}
+.one-business .business-info p ul.level-list{
+	font-size: 0px;
+    margin: 0px 0px 0px 150px;
+    display: inline-block;
+}
+
+.one-business .business-info p:first-child span{
+	display: inline-block;
+	width: 30px;
+    height: 30px;
+	/* background-position: -360px -390px;
+	width: 30px;
+	background-image: url('../images/bg_icon.png'); */
+	background: url('../images/bg_icon.png') no-repeat -360px -385px;
+}
+
+/* .one-business .business-info p ul.level-list li span.icon-sprite{
+	display: block;
+    margin-right: 5px;
+}
+
+.icon-starlighton {
+    background-position: -360px -390px;
+    width: 30px;
+}
+
+.icon-sprite {
+    display: inline-block;
+    background-image: url('../images/bg_icon.png');
+} */
+
+.one-business .goto{
+	position: absolute;
+    right: 15px;
+    bottom: 40px;
+}
+.one-business .goto img{
+	width: 30px;
+    height: 30px;
+}
+    
