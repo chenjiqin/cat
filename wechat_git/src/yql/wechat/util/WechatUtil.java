@@ -114,10 +114,10 @@ public class WechatUtil {
 	}
 	
 	public static void main(String[] args) {
-//		System.out.println(getAccessToken());
+		System.out.println(getAccessToken());
 //		createMenu();
 //		addPermanentSource();//IN0sWjdy16_DMGQ_SDPK-EFdJN3egcuyCQEZGN6H0pM
-		uploadPic();
+//		uploadPic();
 	}
 
 }
