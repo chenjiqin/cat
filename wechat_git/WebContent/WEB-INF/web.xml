@@ -37,6 +37,26 @@
 		<servlet-name>p_share</servlet-name>
 		<url-pattern>/p_share.wx</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>bz_detail</servlet-name>
+		<servlet-class>yql.wechat.servlet.BzDetailServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>bz_detail</servlet-name>
+		<url-pattern>/bzDetail.wx</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>food_detail</servlet-name>
+		<servlet-class>yql.wechat.servlet.FoodDetailServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>food_detail</servlet-name>
+		<url-pattern>/foodDetail.wx</url-pattern>
+	</servlet-mapping>
 
 	<!-- ===================忧伤的分割线===================== -->
 	<servlet>
@@ -47,15 +67,5 @@
 	<servlet-mapping>
 		<servlet-name>login_back</servlet-name>
 		<url-pattern>/login.back</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>bzDetail_back</servlet-name>
-		<servlet-class>yql.wechat.servlet.BzDetailServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>bzDetail_back</servlet-name>
-		<url-pattern>/bzDetail.back</url-pattern>
 	</servlet-mapping>
 </web-app>
