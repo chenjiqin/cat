@@ -80,9 +80,9 @@ public class ReplayServlet extends HttpServlet{
 				ptm.setArticleCount("1");
 				List<PTM_item> list = new ArrayList<PTM_item>();
 				PTM_item ptm_item = new PTM_item();
-				ptm_item.setTitle("白菜的营养价值");
-				ptm_item.setDescription("白菜是我们生活中常见的蔬菜，也是最平常的蔬菜，特别是在北方。虽总是与白菜打交道，但是你对白菜的了解有多深呢?今天小编就介绍下白菜的营养价值，快来来看看吧!");
-				ptm_item.setPicUrl("https://mmbiz.qlogo.cn/mmbiz/WYaic9EYGtPxMURlTIDlPHicqYbq4df7nDH8WIWM78EObzXgq6DIVDibmFNFiaR3xU8RhXnniceYDzb5wnJJ2ic2Y5Xw/0");
+				ptm_item.setTitle("优惠活动");
+				ptm_item.setDescription("各种优惠活动停不下来...");
+				ptm_item.setPicUrl("https://mmbiz.qlogo.cn/mmbiz/WYaic9EYGtPxMURlTIDlPHicqYbq4df7nDVfvE86ubhl2wYKHLOE0ZtGiaKHlIsQcr566KcyYDGbrxxjkwMc7BzZQ/0");
 				ptm_item.setUrl("http://115.159.99.120/wechat_git/pages/wechat/food/p_share.html");
 //				ptm_item.setUrl("http://blog.csdn.net/lyq8479");
 				list.add(ptm_item);
