@@ -4,6 +4,78 @@
 <meta charset="UTF-8">
 <title>菜商</title>
 <link rel="stylesheet" type="text/css" href="../../../resources/wechat/css/business.css">
+<style type="text/css">
+  /* .hdp{
+    position:relative;
+    width:100%;
+    height:220px;
+  } */
+  ul{
+    position:relative;
+    width:100%;
+    height:220px;
+  } 
+  .li_img{
+    list-style:none;
+    position:absolute;
+    left:30px;
+    top:5px;
+    /*float:left;*/
+    width:269px;
+    height:220px;
+    background:red;
+  }
+  .s_left{
+    position:absolute;
+    left:0;
+    top:5px;
+    width:30px;
+    height:220px;
+    background:#EEEEEE;
+    opacity:0.8;
+    text-align:center;
+    vertical-align:middle;
+  }
+  .s_left img{
+    margin-top: 100px;
+  }
+  .s_right{
+    position:absolute;
+    left:299px;
+    top:5px;
+    width:30px;
+    height:220px;
+    background:#EEEEEE;
+    opacity:0.8;
+    text-align:center;
+    margin:auto;
+  }
+  .s_right img{
+    margin-top: 100px;
+  }
+  /* .s_right img{
+    display:inline-block;
+    width:16px;
+    height:220px;
+    margin:auto;
+  } */
+  /* ul span{
+    display:inline-block;
+    clear:both;
+    height:220px;
+    width:20px;
+  } */
+  /* ul .s_left{
+    position:absolute;
+    left:80px;
+    top:0;
+  }
+  ul .s_right{
+    position:absolute;
+    left:180px;
+    top:0;
+  } */
+</style>
 </head>
 <body>
 	<div class="navbar">
@@ -15,12 +87,16 @@
        	<h2>
           	商家图片展示            
          </h2>
-        <div class="business-info">
-            <img alt="" src="../../../resources/wechat/images/d_potato1.jpg"><br>
-            <img alt="" src="../../../resources/wechat/images/d_potato2.jpg">
+        <div class="hdp">
+          <ul>
+            <li class="s_left"><span><img alt="" src="../../../resources/wechat/images/l_left.png" width="16px" height="16px"></span></li>
+            <li class="li_img"><img alt="" src="../../../resources/wechat/images/d_potato1.jpg" width="269px" height="220px"></li>
+            <li class="li_img"><img alt="" src="../../../resources/wechat/images/d_potato2.jpg" width="269px" height="220px"></li>
+            <li class="s_right"><img alt="" src="../../../resources/wechat/images/l_right.png" width="16px" height="16px"></li>
+          </ul>
         </div>
    	</div>
-   	<div>
+   	<div style="clear: both;">
    		<h2>食材功效</h2>
    		<p></p>
    	</div>
